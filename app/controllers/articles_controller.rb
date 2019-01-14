@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+<<<<<<< HEAD
     @article = Article.find(params[:id])
   end
 
@@ -27,6 +28,11 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.update(title: params[:title], description: params[:description])
     redirect_to article_path(@article)
+=======
+  end
+
+  def update
+>>>>>>> 0e146e43b29034a209eeeea09c261dd311e5a7b3
   end
 
 end
